@@ -21,9 +21,6 @@ def load_questions():
         return []
 
 # Initialize session state
-if 'current_question' not in st.session_state:
-    st.session_state.current_question = 0
-    
 if 'answers' not in st.session_state:
     st.session_state.answers = {}
     
@@ -42,72 +39,42 @@ def main():
         st.error("No questions found. Please check the questions file.")
         return
     
-    # Sidebar with progress
-    with st.sidebar:
-        st.header("Progress")
-        progress = (st.session_state.current_question) / len(questions)
-        st.progress(progress)
-        st.write(f"Question {st.session_state.current_question + 1} of {len(questions)}")
-        
-        # Reset button
-        if st.button("Reset Quiz"):
-            st.session_state.current_question = 0
-            st.session_state.answers = {}
-            st.session_state.submitted = False
-            st.experimental_rerun()
+    # Display all questions on one page
+    display_all_questions(questions)
     
-    # Display current question or results
-    if st.session_state.current_question < len(questions) and not st.session_state.submitted:
-        display_question(questions[st.session_state.current_question])
-    elif st.session_state.submitted:
-        display_results(questions)
-    else:
-        # Move to results if all questions answered
+    # Submit button
+    if st.button("Submit Answers"):
         st.session_state.submitted = True
         st.experimental_rerun()
+    
+    # Show results if submitted
+    if st.session_state.submitted:
+        display_results(questions)
 
-def display_question(question):
-    """Display a single question with options"""
-    st.subheader(f"Question {question['id']}")
-    st.markdown(f"**{question['question']}**")
+def display_all_questions(questions):
+    """Display all questions at once"""
+    st.header("Questions")
     
-    # Get user's previous answer if exists
-    user_answer = st.session_state.answers.get(question['id'], None)
-    
-    # Display options as radio buttons
-    answer = st.radio(
-        "Select your answer:",
-        options=[option['letter'] for option in question['options']],
-        format_func=lambda x: f"{x}. {get_option_text(question['options'], x)}",
-        index=get_option_index(question['options'], user_answer) if user_answer else 0,
-        key=f"q_{question['id']}"
-    )
-    
-    # Save answer
-    st.session_state.answers[question['id']] = answer
-    
-    # Navigation buttons
-    col1, col2, col3 = st.columns([1, 1, 1])
-    
-    with col1:
-        if st.button("Previous") and st.session_state.current_question > 0:
-            st.session_state.current_question -= 1
-            st.experimental_rerun()
-    
-    with col2:
-        if st.button("Next"):
-            if st.session_state.current_question < len(load_questions()) - 1:
-                st.session_state.current_question += 1
-                st.experimental_rerun()
-            else:
-                # Last question, submit
-                st.session_state.submitted = True
-                st.experimental_rerun()
-    
-    with col3:
-        if st.button("Submit Quiz"):
-            st.session_state.submitted = True
-            st.experimental_rerun()
+    # Store answers in session state as we go
+    for question in questions:
+        st.subheader(f"Question {question['id']}")
+        st.markdown(f"**{question['question']}**")
+        
+        # Get user's previous answer if exists
+        user_answer = st.session_state.answers.get(question['id'], None)
+        
+        # Display options as radio buttons
+        answer = st.radio(
+            "Select your answer:",
+            options=[option['letter'] for option in question['options']],
+            format_func=lambda x: f"{x}. {get_option_text(question['options'], x)}",
+            index=get_option_index(question['options'], user_answer) if user_answer else 0,
+            key=f"q_{question['id']}"
+        )
+        
+        # Save answer
+        st.session_state.answers[question['id']] = answer
+        st.markdown("---")
 
 def get_option_text(options, letter):
     """Get the text for an option by its letter"""
@@ -166,6 +133,12 @@ def display_results(questions):
         st.warning("📚 Keep studying! Review these concepts to improve your knowledge.")
     else:
         st.error("📖 Time to hit the books! These fundamentals are crucial for your BJJ development.")
+    
+    # Reset button
+    if st.button("Reset Quiz"):
+        st.session_state.answers = {}
+        st.session_state.submitted = False
+        st.experimental_rerun()
 
 if __name__ == "__main__":
     main()
