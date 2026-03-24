@@ -12,7 +12,7 @@ st.set_page_config(
 # Load questions from JSON file
 def load_questions():
     """Load questions from the JSON file"""
-    file_path = Path("questions/phase-1-structured.json")
+    file_path = Path("questions/short-test-structured.json")
     if file_path.exists():
         with open(file_path, 'r') as f:
             return json.load(f)
@@ -29,7 +29,7 @@ if 'submitted' not in st.session_state:
 
 # Main app
 def main():
-    st.title("🥋 BJJ Skill Questionnaire - Phase 1")
+    st.title("🥋 BJJ Skill Questionnaire - Short Test")
     st.markdown("---")
     
     # Load questions

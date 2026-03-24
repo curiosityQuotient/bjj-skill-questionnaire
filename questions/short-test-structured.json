@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "question": "You have successfully secured a Single Leg takedown. Which of the following is a high-percentage method to finish the takedown and get your opponent to the ground?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pulling them into your Closed Guard."
+      },
+      {
+        "letter": "B",
+        "text": "Running the Pipe (stepping back in a circle to drop their weight)."
+      },
+      {
+        "letter": "C",
+        "text": "Standing perfectly still and waiting for them to hop."
+      },
+      {
+        "letter": "D",
+        "text": "Attempting a standing Kimura."
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary tactical benefit of utilizing a Seated (Sit-up) Guard compared to a Supine (Lying) Guard when no grips have been made?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It makes it easier to invert and attack the legs."
+      },
+      {
+        "letter": "B",
+        "text": "It provides a stronger \"four-limb\" defensive shield."
+      },
+      {
+        "letter": "C",
+        "text": "It offers superior mobility to \"Wrestle Up\" or chase the opponent to initiate a connection."
+      },
+      {
+        "letter": "D",
+        "text": "It allows you to rest your lower back during a long round."
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "In the context of guard passing, which of these correctly categorizes \"Pressure Passing\" versus \"Outside Passing\"?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pressure: Torreando; Outside: Over-Under."
+      },
+      {
+        "letter": "B",
+        "text": "Pressure: Over-Under and Body Lock; Outside: Torreando and Back Step."
+      },
+      {
+        "letter": "C",
+        "text": "Pressure: Leg Drag; Outside: Smashing."
+      },
+      {
+        "letter": "D",
+        "text": "There is no technical difference between the two styles."
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": 4,
+    "question": "Why is \"Inside Position\" desirable in BJJ?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "It allows you to grab the opponent's belt more easily."
+      },
+      {
+        "letter": "B",
+        "text": "It is required by IBJJF rules to score points."
+      },
+      {
+        "letter": "C",
+        "text": "It gives you direct control over the opponent's Center of Mass and denies them the ability to use frames."
+      },
+      {
+        "letter": "D",
+        "text": "It makes your submissions look more technical."
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following groups of submissions are most commonly available and effective from the Top Side Control position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Rear Naked Choke and Heel Hook."
+      },
+      {
+        "letter": "B",
+        "text": "Americana, Kimura, and Paper Cutter Choke."
+      },
+      {
+        "letter": "C",
+        "text": "Triangle Choke and Omoplata."
+      },
+      {
+        "letter": "D",
+        "text": "Ankle Pick and Berimbolo."
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": 6,
+    "question": "If you are in Top Half Guard and the bottom player secures an underhook, why is it vital to immediately take a \"Whizzer\" (overhook)?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "To prepare for a Guillotine choke."
+      },
+      {
+        "letter": "B",
+        "text": "To pull the opponent into a tighter Half Guard."
+      },
+      {
+        "letter": "C",
+        "text": "To cut off the opponent's path to your back by putting downward pressure on their shoulder."
+      },
+      {
+        "letter": "D",
+        "text": "To signal to the referee that you are active."
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": 7,
+    "question": "Technical terms such as \"Grapevine,\" \"Low,\" and \"High\" are all variations used to describe which dominant position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Side Control."
+      },
+      {
+        "letter": "B",
+        "text": "The Mount."
+      },
+      {
+        "letter": "C",
+        "text": "The Back."
+      },
+      {
+        "letter": "D",
+        "text": "North-South."
+      }
+    ],
+    "correct_answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following are recognized technical escapes from the Bottom Side Control position?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hip Escape (Shrimping) and Ghost Escape."
+      },
+      {
+        "letter": "B",
+        "text": "The Upa (Bridge), The Berimbolo, and the Rubber Guard."
+      },
+      {
+        "letter": "C",
+        "text": "The Kimura, the Triangle, and the Omoplata."
+      },
+      {
+        "letter": "D",
+        "text": "Closing your eyes and waiting for the round to end."
+      }
+    ],
+    "correct_answer": "A"
+  },
+  {
+    "id": 9,
+    "question": "You are in Bottom Mount and the opponent has established a \"High Mount\" (knees in your armpits). What is your most viable escape option?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A standard Bridge and Roll (Upa)."
+      },
+      {
+        "letter": "B",
+        "text": "The Elbow Escape (Knee-Elbow) to reset their weight toward your hips."
+      },
+      {
+        "letter": "C",
+        "text": "Attempting to bench press the opponent off of you."
+      },
+      {
+        "letter": "D",
+        "text": "Giving up your back to avoid the pressure."
+      }
+    ],
+    "correct_answer": "B"
+  },
+  {
+    "id": 10,
+    "question": "In BJJ strategy, what does it mean to \"Chain Submissions\"?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Using a metal chain to secure a limb (illegal in most tournaments)."
+      },
+      {
+        "letter": "B",
+        "text": "Performing the same submission over and over until it works."
+      },
+      {
+        "letter": "C",
+        "text": "Using a \"Dilemma\" approach where defending one submission directly opens the path to another."
+      },
+      {
+        "letter": "D",
+        "text": "Only attacking submissions when you are winning on points."
+      }
+    ],
+    "correct_answer": "C"
+  }
+]
