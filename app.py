@@ -45,7 +45,7 @@ def main():
     # Submit button
     if st.button("Submit Answers"):
         st.session_state.submitted = True
-        st.experimental_rerun()
+        st.rerun()
     
     # Show results if submitted
     if st.session_state.submitted:
@@ -138,7 +138,7 @@ def display_results(questions):
     if st.button("Reset Quiz"):
         st.session_state.answers = {}
         st.session_state.submitted = False
-        st.experimental_rerun()
+        st.rerun()
 
 if __name__ == "__main__":
     main()
