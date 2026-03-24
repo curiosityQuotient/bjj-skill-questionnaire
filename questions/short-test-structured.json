@@ -73,7 +73,7 @@
   },
   {
     "id": 4,
-    "topic": "Control",
+    "topic": "Passing/Guard",
     "question": "Why is \"Inside Position\" desirable in BJJ?",
     "options": [
       {
@@ -121,7 +121,7 @@
   },
   {
     "id": 6,
-    "topic": "Control",
+    "topic": "Passing/Guard",
     "question": "If you are in Top Half Guard and the bottom player secures an underhook, why is it vital to immediately take a \"Whizzer\" (overhook)?",
     "options": [
       {
@@ -145,7 +145,7 @@
   },
   {
     "id": 7,
-    "topic": "Control",
+    "topic": "Control/Escapes",
     "question": "Technical terms such as \"Grapevine,\" \"Low,\" and \"High\" are all variations used to describe which dominant position?",
     "options": [
       {
@@ -169,7 +169,7 @@
   },
   {
     "id": 8,
-    "topic": "Control",
+    "topic": "Control/Escapes",
     "question": "Which of the following are recognized technical escapes from the Bottom Side Control position?",
     "options": [
       {
@@ -193,7 +193,7 @@
   },
   {
     "id": 9,
-    "topic": "Control",
+    "topic": "Control/Escapes",
     "question": "You are in Bottom Mount and the opponent has established a \"High Mount\" (knees in your armpits). What is your most viable escape option?",
     "options": [
       {
