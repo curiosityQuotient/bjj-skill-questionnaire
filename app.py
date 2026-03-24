@@ -94,9 +94,21 @@ def display_results(questions):
     """Display quiz results"""
     st.header("Quiz Results")
     
-    # Calculate score
+    # Calculate overall score
     correct_answers = 0
     total_questions = len(questions)
+    
+    # Calculate topic-based scores
+    topic_scores = {}
+    topic_totals = {}
+    
+    # Initialize topic tracking
+    for question in questions:
+        topic = question.get('topic', 'Unknown')
+        if topic not in topic_scores:
+            topic_scores[topic] = 0
+            topic_totals[topic] = 0
+        topic_totals[topic] += 1
     
     # Display each question with user's answer and correct answer
     for i, question in enumerate(questions):
@@ -106,8 +118,11 @@ def display_results(questions):
         # Check if answer is correct
         is_correct = user_answer == correct_answer
         
+        # Update scores
         if is_correct:
             correct_answers += 1
+            topic = question.get('topic', 'Unknown')
+            topic_scores[topic] += 1
             st.success(f"**Question {question['id']}:** ✅ Correct")
         else:
             st.error(f"**Question {question['id']}:** ❌ Incorrect")
@@ -121,7 +136,16 @@ def display_results(questions):
     score_percentage = (correct_answers / total_questions) * 100 if total_questions > 0 else 0
     
     st.subheader("Final Score")
-    st.metric("Score", f"{correct_answers}/{total_questions}", f"{score_percentage:.1f}%")
+    st.metric("Overall Score", f"{correct_answers}/{total_questions}", f"{score_percentage:.1f}%")
+    
+    # Topic-based scores
+    st.subheader("Topic-Based Scores")
+    cols = st.columns(min(len(topic_scores), 3))
+    for i, (topic, correct) in enumerate(topic_scores.items()):
+        total = topic_totals[topic]
+        percentage = (correct / total) * 100 if total > 0 else 0
+        col = cols[i % len(cols)]
+        col.metric(topic, f"{correct}/{total}", f"{percentage:.0f}%")
     
     # Performance message
     if score_percentage >= 90:

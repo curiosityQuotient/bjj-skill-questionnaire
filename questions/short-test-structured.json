@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "topic": "Takedowns",
     "question": "You have successfully secured a Single Leg takedown. Which of the following is a high-percentage method to finish the takedown and get your opponent to the ground?",
     "options": [
       {
@@ -24,6 +25,7 @@
   },
   {
     "id": 2,
+    "topic": "Guard",
     "question": "What is the primary tactical benefit of utilizing a Seated (Sit-up) Guard compared to a Supine (Lying) Guard when no grips have been made?",
     "options": [
       {
@@ -47,6 +49,7 @@
   },
   {
     "id": 3,
+    "topic": "Passing/Guard",
     "question": "In the context of guard passing, which of these correctly categorizes \"Pressure Passing\" versus \"Outside Passing\"?",
     "options": [
       {
@@ -70,6 +73,7 @@
   },
   {
     "id": 4,
+    "topic": "Control",
     "question": "Why is \"Inside Position\" desirable in BJJ?",
     "options": [
       {
@@ -93,6 +97,7 @@
   },
   {
     "id": 5,
+    "topic": "Submissions",
     "question": "Which of the following groups of submissions are most commonly available and effective from the Top Side Control position?",
     "options": [
       {
@@ -116,6 +121,7 @@
   },
   {
     "id": 6,
+    "topic": "Control",
     "question": "If you are in Top Half Guard and the bottom player secures an underhook, why is it vital to immediately take a \"Whizzer\" (overhook)?",
     "options": [
       {
@@ -139,6 +145,7 @@
   },
   {
     "id": 7,
+    "topic": "Control",
     "question": "Technical terms such as \"Grapevine,\" \"Low,\" and \"High\" are all variations used to describe which dominant position?",
     "options": [
       {
@@ -158,10 +165,11 @@
         "text": "North-South."
       }
     ],
-    "correct_answer": "C"
+    "correct_answer": "B"
   },
   {
     "id": 8,
+    "topic": "Escapes",
     "question": "Which of the following are recognized technical escapes from the Bottom Side Control position?",
     "options": [
       {
@@ -185,6 +193,7 @@
   },
   {
     "id": 9,
+    "topic": "Escapes",
     "question": "You are in Bottom Mount and the opponent has established a \"High Mount\" (knees in your armpits). What is your most viable escape option?",
     "options": [
       {
@@ -208,6 +217,7 @@
   },
   {
     "id": 10,
+    "topic": "Submissions",
     "question": "In BJJ strategy, what does it mean to \"Chain Submissions\"?",
     "options": [
       {
