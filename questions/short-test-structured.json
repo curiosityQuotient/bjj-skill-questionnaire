@@ -194,23 +194,23 @@
   {
     "id": 9,
     "topic": "Control/Escapes",
-    "question": "You are in Bottom Mount and the opponent has established a \"High Mount\" (knees in your armpits). What is your most viable escape option?",
+    "question": " You are in bottom mount, which of the below are the highest percentage escapes?",
     "options": [
       {
         "letter": "A",
-        "text": "A standard Bridge and Roll (Upa)."
+        "text": "The Bench Press and the Kipping Escape."
       },
       {
         "letter": "B",
-        "text": "The Elbow Escape (Knee-Elbow) to reset their weight toward your hips."
+        "text": "Bridge & Roll (Upa) and the Elbow Escape."
       },
       {
         "letter": "C",
-        "text": "Attempting to bench press the opponent off of you."
+        "text": "Giving up the Back and the 'Stiff-Arm' Escape."
       },
       {
         "letter": "D",
-        "text": "Giving up your back to avoid the pressure."
+        "text": "The Muscle-Up and the Leg Press."
       }
     ],
     "correct_answer": "B"
